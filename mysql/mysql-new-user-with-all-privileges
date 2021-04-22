@@ -1,0 +1,13 @@
+##To create new user
+CREATE USER 'myadmin'@'localhost' IDENTIFIED BY 'ImHardPa55w0rd';
+
+CREATE USER 'myadmin'@'%' IDENTIFIED BY 'ImHardPa55w0rd';
+
+##To give all privileges
+GRANT ALL PRIVILEGES ON * . * TO 'myadmin'@'localhost';
+
+GRANT ALL PRIVILEGES ON * . * TO 'myadmin'@'%';
+
+##Flush privileges
+FLUSH PRIVILEGES;
+

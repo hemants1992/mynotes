@@ -1,0 +1,13 @@
+##Allow Remote Access to MySQL
+
+##open mysqld.cnf
+sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
+
+#Navigate to the line that begins with the bind-address directive
+change bind-address 127.0.0.1 to 0.0.0.0
+
+#Restart MySQL
+sudo systemctl restart mysql
+
+#reference link
+https://www.digitalocean.com/community/tutorials/how-to-allow-remote-access-to-mysql
